@@ -1,0 +1,205 @@
+/* Global */
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Utilisation de la police Poppins */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #8D9FA6; /* Fond global */
+    color: #0D0D0D; /* Texte principal */
+}
+
+/* Navigation */
+nav {
+    background-color: #455359; /* Couleur du menu de navigation */
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600; /* Police semi-gras */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #D9C1B4; /* Couleur au survol */
+}
+
+/* Header */
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8D9FA6; /* Fond de l'en-tête */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px; /* Espacement réduit entre le titre principal et le sous-titre */
+    color: #0D0D0D;
+    font-weight: 700; /* Gras */
+}
+
+header h2 {
+    font-size: 2em;
+    font-weight: 300; /* Légèreté */
+    color: #ffffff;
+    margin-bottom: 20px; /* Espacement après le sous-titre */
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#projects {
+    background-color: #455359; /* Fond de la section Projets */
+    color: white;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-between; /* Répartir les images avec des espaces égaux */
+    gap: 20px; /* Espacement entre les images */
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 10px;
+    max-width: 1200px; /* Limite pour les grands écrans */
+}
+
+.project-grid div {
+    flex: 1; /* Toutes les colonnes occupent une taille égale */
+    max-width: 300px; /* Limiter la largeur des images */
+    text-align: center; /* Centrer les images */
+}
+
+.project-grid div img {
+    width: 100%; /* Ajuster les images pour occuper tout l'espace */
+    height: auto; /* Conserver les proportions */
+    object-fit: contain;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.project-grid div img:hover {
+    transform: scale(1.05); /* Zoom au survol */
+}
+
+/* À propos */
+#about {
+    background-color: #8D9FA6; /* Fond de la section À propos */
+    color: #0D0D0D;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre le contenu horizontalement */
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.skill img {
+    width: 50px; /* Assure une taille identique pour toutes les images */
+    height: 50px;
+    object-fit: contain;
+}
+
+.skill-bar {
+    flex-grow: 1;
+    text-align: left;
+    width: 300px; /* Ajuste la largeur des barres */
+}
+
+.skill-bar span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.skill-bar .bar {
+    height: 10px;
+    background-color: #8e44ad;
+    border-radius: 5px;
+}
+
+/* Contact */
+#contact {
+    background-color: #455359; /* Fond de la section Contact */
+    color: white;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #8D9FA6; /* Bordures des champs */
+    border-radius: 5px;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.contact-form button {
+    background-color: #D9C1B4; /* Bouton de formulaire */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #455359;
+}
+
+/* Footer */
+footer {
+    background-color: #455359; /* Fond du pied de page */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Portrait */
+.profile img {
+    width: 150px; /* Taille du cercle */
+    height: 150px;
+    border-radius: 50%; /* Rend l'image circulaire */
+    object-fit: cover; /* Ajuste l'image pour remplir le cercle */
+    border: 5px solid #fff; /* Bordure blanche (facultatif) */
+}
